@@ -1,0 +1,18 @@
+ALTER TABLE student
+ADD pointer FLOAT;
+
+UPDATE student
+SET pointer = 8.4
+WHERE PRN = 26;
+
+UPDATE student
+SET pointer = 8.1
+WHERE PRN = 27;
+
+UPDATE student
+SET pointer = 8.4
+WHERE PRN = 28;
+
+UPDATE student
+SET pointer = 8.9
+WHERE PRN = 34;
