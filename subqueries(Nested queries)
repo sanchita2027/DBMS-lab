@@ -1,0 +1,22 @@
+SELECT name 
+from instructor
+where salary > (SELECT avg(salary)
+                 from instructor);
+                 
+SELECT name
+from instructor
+where name in (SELECT name
+                 from instructor
+                 where dept_name = 'Biology');
+				
+SELECT name 
+from instructor
+where name not in (SELECT name
+                 from instructor
+                 where dept_name = 'Biology');                 
+                 
+SELECT max(avg_salary)
+from (SELECT avg(salary) as avg_salary
+                 from instructor
+                 group by dept_name)
+                 as dept_avg;  
