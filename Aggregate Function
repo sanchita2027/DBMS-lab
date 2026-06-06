@@ -1,0 +1,31 @@
+SELECT name
+FROM student
+WHERE ADDRESS='Mumbai' and UID is not null;
+
+SELECT name
+FROM student
+WHERE UID is not null;
+
+SELECT avg(salary)
+FROM instructor
+WHERE dept_name = 'Biology';
+
+SELECT avg(pointer)
+FROM student
+WHERE pointer is not null;
+
+SELECT count(PRN)
+FROM student
+WHERE ADDRESS = 'Mumbai';
+
+SELECT count(*)
+FROM student;
+
+
+SELECT name 
+from instructor
+WHERE salary > 50000 and DEPT_name ='CSE';
+
+SELECT name 
+from instructor
+WHERE salary > 50000 or DEPT_name ='CSE';
