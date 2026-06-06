@@ -1,0 +1,29 @@
+SELECT student.name, 
+       university.name AS university_name
+from student
+       INNER JOIN university
+       ON STUDENT.uid = university.UID;
+       
+SELECT student.name, 
+       university.name AS university_name
+from student
+       LEFT JOIN university
+       ON STUDENT.uid = university.UID;
+       
+SELECT student.name, 
+       university.name AS university_name
+from student
+       RIGHT JOIN university
+       ON STUDENT.uid = university.UID;	
+       
+SELECT student.name, 
+       university.name AS university_name
+from student
+       FULL OUTER JOIN university
+       ON STUDENT.uid = university.UID;
+
+SELECT student.name, 
+       university.name AS university_name
+from student
+       CROSS JOIN university
+       ON STUDENT.uid = university.UID;
