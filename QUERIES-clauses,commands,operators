@@ -1,0 +1,50 @@
+DELETE FROM student
+WHERE PRN = 25;
+
+ALTER TABLE student ADD age INT;
+ALTER TABLE student DROP COLUMN age;
+
+SELECT NAME FROM instructor;
+
+SELECT DISTINCT dept_name FROM instructor;
+
+SELECT ALL dept_name FROM instructor;
+
+SELECT DISTINCT subject FROM faculty;
+
+SELECT ALL subject FROM faculty;
+
+SELECT DISTINCT Address 
+FROM student
+WHERE Address = 'Mumbai';
+
+SELECT DISTINCT course_name FROM course
+WHERE faculty_id = 1234;
+
+SELECT NAME  
+FROM student
+WHERE NAME LIKE 'A%';
+
+SELECT NAME
+FROM student
+WHERE NAME LIKE '%l';
+
+SELECT NAME 
+FROM student
+WHERE NAME LIKE '%li%';
+
+SELECT NAME
+FROM instructor
+ORDER BY NAME; 
+
+SELECT NAME
+FROM student
+ORDER BY NAME DESC; 
+
+SELECT NAME
+FROM student
+ORDER BY NAME ASC; 
+
+SELECT NAME, prn
+FROM student
+WHERE prn BETWEEN 25 AND 30;
