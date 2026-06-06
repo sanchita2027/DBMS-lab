@@ -1,0 +1,17 @@
+( SELECT name 
+FROM student)
+UNION 
+( SELECT name 
+FROM alumini);
+
+( SELECT name 
+FROM student)
+INTERSECT
+( SELECT name 
+FROM alumini);
+
+( SELECT name 
+FROM student)
+EXCEPT
+( SELECT name 
+FROM alumini);
