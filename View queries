@@ -1,0 +1,16 @@
+CREATE VIEW student_name as
+SELECT name 
+from student;
+
+CREATE VIEW student_info as 
+SELECT student.name, 
+       university.name AS university_name
+from student
+       INNER JOIN university
+       ON STUDENT.uid = university.UID;
+
+CREATE VIEW instructor_avg_salary as
+SELECT dept_name,
+    AVG (salary) as average_salary
+    from instructor
+    GROUP BY dept_name;
